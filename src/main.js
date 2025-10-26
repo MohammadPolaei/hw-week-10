@@ -1,6 +1,6 @@
-import { MenuContainer } from "./components/menuContainer/menuContainer";
+import { WholeContainer } from "./components/wholeContainer";
 import "./style.css";
 
 const mainAppContainer = document.getElementById("app");
 
-mainAppContainer.append(MenuContainer());
+mainAppContainer.append(WholeContainer());

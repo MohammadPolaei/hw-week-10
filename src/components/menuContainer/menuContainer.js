@@ -1,9 +1,20 @@
+import { Header } from "./header/header";
+
 export function MenuContainer() {
 	const menuContainer = document.createElement("div");
-	menuContainer.setAttribute("id", "container");
-	menuContainer.classList.add(
-		"flex,flex-col,justify-items-start,gap-[50px],p-[20px],box-border,max-h-screen,sm:flex-row"
-	);
-	menuContainer.innerHTML = ``;
+	menuContainer.setAttribute("id", "menuSection");
+	menuContainer.classList.add("bg-[#00c8c4]");
+	menuContainer.classList.add("p-[25px]");
+	menuContainer.classList.add("rounded-2xl");
+	menuContainer.classList.add("shadow-xl");
+	menuContainer.classList.add("w-full");
+	menuContainer.classList.add("sm:w-[70%]");
+	menuContainer.classList.add("max-h-[100%]");
+	menuContainer.classList.add("flex");
+	menuContainer.classList.add("flex-col");
+	menuContainer.classList.add("justify-items-start");
+	menuContainer.classList.add("items-center,gap-[50px]");
+	menuContainer.classList.add("gap-[50px]");
+	menuContainer.append(Header());
 	return menuContainer;
 }
