@@ -1,4 +1,5 @@
 import { Header } from "./header/header";
+import { Menu } from "./menu/menu";
 
 export function MenuContainer() {
 	const menuContainer = document.createElement("div");
@@ -13,8 +14,9 @@ export function MenuContainer() {
 	menuContainer.classList.add("flex");
 	menuContainer.classList.add("flex-col");
 	menuContainer.classList.add("justify-items-start");
-	menuContainer.classList.add("items-center,gap-[50px]");
+	menuContainer.classList.add("items-center");
 	menuContainer.classList.add("gap-[50px]");
-	menuContainer.append(Header());
+
+	menuContainer.append(Header(), Menu());
 	return menuContainer;
 }

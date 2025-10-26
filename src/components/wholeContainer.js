@@ -1,4 +1,5 @@
 import { MenuContainer } from "./menuContainer/menuContainer";
+import { CalculationAndSubmit } from "./priceCalculatorContainer/calculationAndSubmit";
 
 export function WholeContainer() {
 	const wholeContainer = document.createElement("div");
@@ -11,6 +12,6 @@ export function WholeContainer() {
 	wholeContainer.classList.add("box-border");
 	wholeContainer.classList.add("max-h-screen");
 	wholeContainer.classList.add("sm:flex-row");
-	wholeContainer.append(MenuContainer());
+	wholeContainer.append(MenuContainer(), CalculationAndSubmit());
 	return wholeContainer;
 }
