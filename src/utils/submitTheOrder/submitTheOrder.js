@@ -7,6 +7,8 @@ import {
 	wholeCartPrice,
 } from "./itemsInDOMForCalculation/itemsInDOMForCalculation";
 
+const menuSection = document.getElementById("menuSection__foodList");
+
 menuSection.addEventListener("click", (e) => {
 	if (e.target.parentElement.children[1].value != undefined) {
 		// getting whole items price at once
