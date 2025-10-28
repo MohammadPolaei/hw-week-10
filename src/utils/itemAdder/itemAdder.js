@@ -55,7 +55,7 @@ export function ItemAdder() {
 										name=""
 										id=""
 										value="0"
-										class="w-14 bg-white rounded-[5px] shadow-2xl text-center focus:outline-0"
+										class="w-14 bg-white rounded-[5px] shadow-2xl text-center mr-1.5 focus:outline-0"
 									/>
 									<button id="subDown"
 										class="absolute right-10 rounded-l-[5px] text-white bg-[#008292] w-5"
