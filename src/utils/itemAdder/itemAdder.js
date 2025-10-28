@@ -31,7 +31,7 @@ export function ItemAdder() {
 		}
 
 		newItem.innerHTML = `<div
-						class="box-border flex flex-row justify-between items-center bg-[#def3fd] rounded-[10px] w-full h-[120px] px-5 relative"
+						class="box-border flex flex-row justify-between items-center bg-[#def3fd] rounded-[10px] w-full h-[120px] px-5 relative overflow-hidden"
 						id="${element.id}"
 					>
 						<div class="flex flex-row items-center gap-4">
@@ -41,11 +41,11 @@ export function ItemAdder() {
 								class="w-15 h-15 rounded-[5px]"
 							/>
 							<div class="flex flex-col gap-3">
-								<h4 class="font-bold text-[17px]">${element.title}</h4>
+								<h4 class="font-bold tex-[10px] sm:text-[15px]">${element.title}</h4>
 								<p class="text-[15px]">${element.price} تومان</p>
 								<div class="relative">
 									<button id="addUp"
-										class="absolute right-[-5px] rounded-r-[5px] text-white bg-[#008292] w-5"
+										class="absolute right-[-10px] rounded-r-[5px] text-white bg-[#008292] w-5"
 										onclick="addUp(this)"
 									>
 										+
@@ -55,10 +55,10 @@ export function ItemAdder() {
 										name=""
 										id=""
 										value="0"
-										class="w-14 bg-white rounded-[5px] shadow-2xl text-center mr-1.5 focus:outline-0"
+										class="w-14 bg-white mr-1 rounded-[5px] shadow-2xl text-center focus:outline-0"
 									/>
 									<button id="subDown"
-										class="absolute right-10 rounded-l-[5px] text-white bg-[#008292] w-5"
+										class="absolute right-10.5 rounded-l-[5px] text-white bg-[#008292] w-5"
 										onclick="subDown(this)"
 									>
 										-

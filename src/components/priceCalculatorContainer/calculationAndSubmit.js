@@ -43,7 +43,7 @@ export function CalculationAndSubmit() {
 							id="discountCode"
 							type="text"
 							placeholder="کد تخفیف"
-							class="w-full bg-white py-2 rounded-[5px] placeholder:px-2 focus:outline-0"
+							class="w-full bg-white py-2 pr-2 rounded-[5px] placeholder:px-1 focus:outline-0"
 						/>
 						<div
 							class="bg-[#008292] absolute left-0 w-10 rounded-l-[5px] py-2 text-center text-white"
